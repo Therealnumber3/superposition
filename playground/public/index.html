@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUPERPOSITION Playground</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>SUPERPOSITION Playground</h1>
+      <p class="subtitle">Run quantum runtime snippets in your browser-backed local sandbox.</p>
+
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Code</h2>
+          <button id="runBtn">Run</button>
+        </div>
+        <textarea id="codeInput" spellcheck="false"></textarea>
+      </section>
+
+      <section class="grid">
+        <section class="panel">
+          <h2>Result</h2>
+          <pre id="resultOutput"></pre>
+        </section>
+
+        <section class="panel">
+          <h2>Logs</h2>
+          <pre id="logsOutput"></pre>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

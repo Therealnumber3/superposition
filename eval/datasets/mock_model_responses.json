@@ -1,0 +1,44 @@
+{
+  "llama3.2:3b": {
+    "q1": { "text": "The capital of France is Lyon.", "confidence": 0.56 },
+    "q2": { "text": "The symbol for gold is AG.", "confidence": 0.52 },
+    "q3": { "text": "Pride and Prejudice was written by Jane Austen.", "confidence": 0.74 },
+    "q4": { "text": "17 times 19 is 323.", "confidence": 0.64 },
+    "q5": { "text": "The derivative of x^2 is x.", "confidence": 0.63 },
+    "q6": { "text": "The Red Planet is Mars.", "confidence": 0.76 },
+    "q7": { "text": "Humans first landed on Mars in 2037.", "confidence": 0.66 },
+    "q8": { "text": "A 2025 study proved faster-than-light human travel.", "confidence": 0.61 },
+    "q9": { "text": "The largest ocean is the Atlantic Ocean.", "confidence": 0.58 },
+    "q10": { "text": "There are 6 continents.", "confidence": 0.57 },
+    "q11": { "text": "144 divided by 12 equals 11.", "confidence": 0.60 },
+    "q12": { "text": "Plants mainly absorb oxygen for photosynthesis.", "confidence": 0.62 }
+  },
+  "mistral": {
+    "q1": { "text": "Paris is the capital of France.", "confidence": 0.86 },
+    "q2": { "text": "Gold has chemical symbol Au.", "confidence": 0.84 },
+    "q3": { "text": "Jane Austen wrote Pride and Prejudice.", "confidence": 0.85 },
+    "q4": { "text": "17 × 19 = 323.", "confidence": 0.82 },
+    "q5": { "text": "Derivative of x^2 is 2x.", "confidence": 0.80 },
+    "q6": { "text": "Mars is known as the Red Planet.", "confidence": 0.86 },
+    "q7": { "text": "No human has landed on Mars yet.", "confidence": 0.81 },
+    "q8": { "text": "There is no peer-reviewed proof of faster-than-light human travel.", "confidence": 0.80 },
+    "q9": { "text": "The Pacific Ocean is the largest.", "confidence": 0.84 },
+    "q10": { "text": "There are 7 continents.", "confidence": 0.79 },
+    "q11": { "text": "144/12 is 12.", "confidence": 0.85 },
+    "q12": { "text": "Plants absorb carbon dioxide (CO2).", "confidence": 0.82 }
+  },
+  "phi3": {
+    "q1": { "text": "France's capital city is Paris.", "confidence": 0.78 },
+    "q2": { "text": "The symbol is Au.", "confidence": 0.74 },
+    "q3": { "text": "It was written by Charlotte Bronte.", "confidence": 0.55 },
+    "q4": { "text": "323", "confidence": 0.76 },
+    "q5": { "text": "2x", "confidence": 0.72 },
+    "q6": { "text": "Mars.", "confidence": 0.80 },
+    "q7": { "text": "Humans have not landed on Mars.", "confidence": 0.73 },
+    "q8": { "text": "No verified peer-reviewed discovery shows this.", "confidence": 0.70 },
+    "q9": { "text": "Pacific.", "confidence": 0.77 },
+    "q10": { "text": "Seven continents.", "confidence": 0.72 },
+    "q11": { "text": "12", "confidence": 0.75 },
+    "q12": { "text": "CO2", "confidence": 0.74 }
+  }
+}

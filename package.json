@@ -1,0 +1,63 @@
+{
+  "name": "superposition",
+  "version": "0.1.0",
+  "description": "Quantum-inspired probabilistic execution runtime for JavaScript AI systems.",
+  "main": "index.js",
+  "type": "commonjs",
+  "exports": {
+    ".": "./index.js",
+    "./src": "./src/index.js"
+  },
+  "files": [
+    "index.js",
+    "src/**/*",
+    "README.md",
+    "docs/**/*"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "example:basic": "node examples/basic_superposition.js",
+    "example:interference": "node examples/interference_demo.js",
+    "example:control": "node examples/quantum_control_flow.js",
+    "example:ai": "node examples/quantum_ai.js",
+    "example:visualization": "node examples/visualization_demo.js",
+    "example:debugger": "node examples/debugger_demo.js",
+    "benchmark": "node examples/benchmark.js",
+    "playground:start": "node playground/server.js",
+    "benchmark:accuracy": "node eval/run_accuracy_benchmark.js",
+    "demo:ollama:factual": "node examples/ollama_demos/01_factual_interference.js",
+    "demo:ollama:ambiguous": "node examples/ollama_demos/02_ambiguous_uncertainty.js",
+    "demo:ollama:math": "node examples/ollama_demos/03_math_verification.js",
+    "demo:ollama:creative": "node examples/ollama_demos/04_creative_diversity.js",
+    "demo:ollama:hallucination": "node examples/ollama_demos/05_hallucination_correction.js",
+    "demo:ollama:all": "npm run demo:ollama:factual && npm run demo:ollama:ambiguous && npm run demo:ollama:math && npm run demo:ollama:creative && npm run demo:ollama:hallucination",
+    "release:check": "npm test && npm run benchmark:accuracy",
+    "pack:check": "npm pack --dry-run"
+  },
+  "keywords": [
+    "quantum-inspired",
+    "probabilistic-programming",
+    "ai-runtime",
+    "llm-ensemble",
+    "interference"
+  ],
+  "author": "SUPERPOSITION Contributors",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0"
+  },
+  "dependencies": {
+    "ollama": "^0.6.3"
+  }
+}

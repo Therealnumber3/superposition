@@ -1,0 +1,235 @@
+{
+  "generatedAt": "2026-02-14T13:39:03.963Z",
+  "seed": 1337,
+  "summary": {
+    "totalQuestions": 12,
+    "baselineAccuracy": 25,
+    "superpositionAccuracy": 83.33,
+    "accuracyImprovementPctPoints": 58.33,
+    "baselineHallucinationRate": 75,
+    "superpositionHallucinationRate": 16.67,
+    "hallucinationReductionPctPoints": 58.33,
+    "baselineBrierScore": 0.2941,
+    "superpositionBrierScore": 0.0001,
+    "contradictionDetectionRate": 100,
+    "contradictionGroundTruthCases": 8
+  },
+  "details": [
+    {
+      "id": "q1",
+      "category": "factual",
+      "prompt": "What is the capital of France?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "The capital of France is Lyon.",
+        "confidence": 0.56,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "mistral",
+        "text": "Paris is the capital of France.",
+        "predictedCorrectness": 0.995504174694926,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q2",
+      "category": "factual",
+      "prompt": "What is the chemical symbol for gold?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "The symbol for gold is AG.",
+        "confidence": 0.52,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "mistral",
+        "text": "Gold has chemical symbol Au.",
+        "predictedCorrectness": 0,
+        "correct": false
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q3",
+      "category": "factual",
+      "prompt": "Who wrote 'Pride and Prejudice'?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "Pride and Prejudice was written by Jane Austen.",
+        "confidence": 0.74,
+        "correct": true
+      },
+      "superposition": {
+        "measuredModel": "llama3.2:3b",
+        "text": "Pride and Prejudice was written by Jane Austen.",
+        "predictedCorrectness": 0.9976885900399244,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q4",
+      "category": "math",
+      "prompt": "What is 17 * 19?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "17 times 19 is 323.",
+        "confidence": 0.64,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "323",
+        "predictedCorrectness": 0.9722151153865836,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q5",
+      "category": "math",
+      "prompt": "What is the derivative of x^2?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "The derivative of x^2 is x.",
+        "confidence": 0.63,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "mistral",
+        "text": "Derivative of x^2 is 2x.",
+        "predictedCorrectness": 0.9945515869584016,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q6",
+      "category": "factual",
+      "prompt": "Which planet is known as the Red Planet?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "The Red Planet is Mars.",
+        "confidence": 0.76,
+        "correct": true
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "Mars.",
+        "predictedCorrectness": 1,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q7",
+      "category": "hallucination-prone",
+      "prompt": "In what year did the first human land on Mars?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "Humans first landed on Mars in 2037.",
+        "confidence": 0.66,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "mistral",
+        "text": "No human has landed on Mars yet.",
+        "predictedCorrectness": 0.994366678047115,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q8",
+      "category": "hallucination-prone",
+      "prompt": "What is the latest peer-reviewed discovery proving faster-than-light travel in humans?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "A 2025 study proved faster-than-light human travel.",
+        "confidence": 0.61,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "llama3.2:3b",
+        "text": "A 2025 study proved faster-than-light human travel.",
+        "predictedCorrectness": 0,
+        "correct": false
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q9",
+      "category": "factual",
+      "prompt": "What is the largest ocean on Earth?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "The largest ocean is the Atlantic Ocean.",
+        "confidence": 0.58,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "Pacific.",
+        "predictedCorrectness": 0.9952538766826233,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q10",
+      "category": "factual",
+      "prompt": "How many continents are there on Earth (standard model)?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "There are 6 continents.",
+        "confidence": 0.57,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "Seven continents.",
+        "predictedCorrectness": 0.9950302977461962,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q11",
+      "category": "math",
+      "prompt": "Solve: 144 / 12",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "144 divided by 12 equals 11.",
+        "confidence": 0.6,
+        "correct": true
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "12",
+        "predictedCorrectness": 1,
+        "correct": true
+      },
+      "contradictionDetected": true
+    },
+    {
+      "id": "q12",
+      "category": "factual",
+      "prompt": "What gas do plants primarily absorb for photosynthesis?",
+      "baseline": {
+        "model": "llama3.2:3b",
+        "text": "Plants mainly absorb oxygen for photosynthesis.",
+        "confidence": 0.62,
+        "correct": false
+      },
+      "superposition": {
+        "measuredModel": "phi3",
+        "text": "CO2",
+        "predictedCorrectness": 0.9947732254257289,
+        "correct": true
+      },
+      "contradictionDetected": true
+    }
+  ]
+}

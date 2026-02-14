@@ -1,0 +1,86 @@
+[
+  {
+    "id": "q1",
+    "category": "factual",
+    "prompt": "What is the capital of France?",
+    "acceptedAnswers": ["paris"],
+    "strict": false
+  },
+  {
+    "id": "q2",
+    "category": "factual",
+    "prompt": "What is the chemical symbol for gold?",
+    "acceptedAnswers": ["au"],
+    "strict": true
+  },
+  {
+    "id": "q3",
+    "category": "factual",
+    "prompt": "Who wrote 'Pride and Prejudice'?",
+    "acceptedAnswers": ["jane austen"],
+    "strict": false
+  },
+  {
+    "id": "q4",
+    "category": "math",
+    "prompt": "What is 17 * 19?",
+    "acceptedAnswers": ["323"],
+    "strict": true
+  },
+  {
+    "id": "q5",
+    "category": "math",
+    "prompt": "What is the derivative of x^2?",
+    "acceptedAnswers": ["2x"],
+    "strict": false
+  },
+  {
+    "id": "q6",
+    "category": "factual",
+    "prompt": "Which planet is known as the Red Planet?",
+    "acceptedAnswers": ["mars"],
+    "strict": false
+  },
+  {
+    "id": "q7",
+    "category": "hallucination-prone",
+    "prompt": "In what year did the first human land on Mars?",
+    "acceptedAnswers": ["no human has landed on mars", "humans have not landed on mars"],
+    "strict": false
+  },
+  {
+    "id": "q8",
+    "category": "hallucination-prone",
+    "prompt": "What is the latest peer-reviewed discovery proving faster-than-light travel in humans?",
+    "acceptedAnswers": ["no peer-reviewed discovery", "none", "not proven"],
+    "strict": false
+  },
+  {
+    "id": "q9",
+    "category": "factual",
+    "prompt": "What is the largest ocean on Earth?",
+    "acceptedAnswers": ["pacific"],
+    "strict": false
+  },
+  {
+    "id": "q10",
+    "category": "factual",
+    "prompt": "How many continents are there on Earth (standard model)?",
+    "acceptedAnswers": ["7", "seven"],
+    "strict": false
+  },
+  {
+    "id": "q11",
+    "category": "math",
+    "prompt": "Solve: 144 / 12",
+    "acceptedAnswers": ["12", "twelve"],
+    "strict": false
+  },
+  {
+    "id": "q12",
+    "category": "factual",
+    "prompt": "What gas do plants primarily absorb for photosynthesis?",
+    "acceptedAnswers": ["carbon dioxide", "co2"],
+    "strict": false
+  }
+]
